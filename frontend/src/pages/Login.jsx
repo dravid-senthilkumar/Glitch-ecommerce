@@ -59,7 +59,7 @@ const Login = () => {
       </div>
       {currentState === "Login" ? ""  : <input className='w-full px-3 py-2 border border-gray-800' onChange={(e) => setUsername(e.target.value)} value={username} type="text" required placeholder='User Name' />}
       <input className='w-full px-3 py-2 border border-gray-800' onChange={(e) => setEmail(e.target.value)} value={email} type="text" required placeholder='Email' />
-      <input className='w-full px-3 py-2 border border-gray-800' onChange={(e) => setPassword(e.target.value)} value={password} type="text" required placeholder='Password' />
+      <input className='w-full px-3 py-2 border border-gray-800' onChange={(e) => setPassword(e.target.value)} value={password} type="password" required placeholder='Password' />
       <div className='w-full flex justify-between text-sm mt-[-8px]'>
         <p className='cursor-pointer'>forgot your password?</p> 
         {currentState === "Login" ? 
