@@ -53,10 +53,10 @@ const Navbar = () => {
                 <div className="absolute right-0 pt-4 w-36 bg-slate-100 text-gray-500 rounded shadow-lg">
                   <div className="flex flex-col gap-2 py-3 px-5">
                     <Link to="/login">
-                      <p className="cursor-pointer hover:text-black">My Profile</p>
+                      <p onClick={() => setIsOpen(!isOpen)} className="cursor-pointer hover:text-black">My Profile</p>
                     </Link>
                     <Link to="/order">
-                      <p className="cursor-pointer hover:text-black">Orders</p>
+                      <p onClick={() => setIsOpen(!isOpen)} className="cursor-pointer hover:text-black">Orders</p>
                     </Link>
                     <p onClick={logout} className="cursor-pointer hover:text-black">
                       Logout
