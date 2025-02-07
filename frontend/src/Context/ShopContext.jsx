@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 export const ShopContext = createContext(); 
 
 const ShopContextProvider = (props) => {
-    const currency = "$";
+    const currency = "₹";
     const deliveryFee = 10; 
     const backendURL = process.env.REACT_APP_BACKEND_URL
 
