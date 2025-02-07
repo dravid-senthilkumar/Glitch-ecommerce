@@ -1,15 +1,17 @@
 import React, { createContext, useEffect, useState} from 'react'
-// import { products } from '../assets/assets';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-export const ShopContext = createContext();
+
+
+
+export const ShopContext = createContext(); 
 
 const ShopContextProvider = (props) => {
     const currency = "$";
     const deliveryFee = 10; 
-    const backendURL = "http://localhost:8080"
+    const backendURL = process.env.REACT_APP_BACKEND_URL
 
     const [products,setProducts] = useState([]);
     const [token,setToken] = useState('')

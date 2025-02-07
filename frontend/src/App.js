@@ -15,7 +15,6 @@ import { ToastContainer} from 'react-toastify';
 
 function App() {
   return (
-    
     <div className='p-6'>
       <Navbar/>
       <ToastContainer/>
