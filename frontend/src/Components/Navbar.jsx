@@ -14,6 +14,7 @@ const Navbar = () => {
     localStorage.removeItem("token")
     setToken('')
     setCartItems({})
+    setIsOpen(!isOpen)
   }
 
   return (
